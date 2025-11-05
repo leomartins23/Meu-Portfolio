@@ -1,0 +1,67 @@
+# Desafio: Jogo de Adivinhação
+# Nível: Iniciante
+
+# Objetivo:
+# Criar um programa em Python onde o computador escolhe um número aleatório entre 1 e 100,
+# e o usuário tenta adivinhar esse número.
+
+# Instruções:
+# 1. Importe o módulo 'random'.
+# 2. Gere um número aleatório entre 1 e 100 e armazene em uma variável.
+# 3. Solicite que o usuário tente adivinhar o número.
+# 4. Utilize um loop para permitir que ele tente até acertar.
+# 5. A cada tentativa, informe se o palpite foi:
+#    - Muito baixo
+#    - Muito alto
+#    - Correto
+# 6. Quando o usuário acertar, mostre uma mensagem de parabéns e informe quantas tentativas ele usou.
+
+# Exemplo de Saída Esperada:
+# Tente adivinhar o número entre 1 e 100:
+# Seu palpite: 50
+# Muito alto!
+# Seu palpite: 25
+# Muito baixo!
+# Seu palpite: 37
+# Parabéns! Você acertou em 3 tentativas.
+
+# Seu código aqui:
+
+# Importa o módulo random, que permite gerar números aleatórios
+import random
+
+# Gera um número aleatório entre 1 e 100 e armazena na variável numero_aleatorio
+numero_aleatorio = random.randint(1, 100)
+
+# Inicializa a variável palpite como None para entrar no loop
+palpite = None
+
+# Contador de tentativas começa em 0
+tentativas = 0
+
+# Mensagem inicial para o usuário
+print()
+print("=== Tente adivinhar o Número Aleatório ===\n")
+
+# Loop continua até o usuário acertar o número
+while palpite != numero_aleatorio:
+    # Solicita que o usuário digite um número inteiro
+    palpite = int(input("\nDigite um Número: "))
+
+    # Incrementa o contador de tentativas a cada palpite
+    tentativas += 1
+
+    # Verifica se o palpite foi maior que o número gerado
+    if palpite > numero_aleatorio:
+        print("\nQuase, mas você chutou alto! Tente outro Número")
+
+    # Verifica se o palpite foi menor que o número gerado
+    elif palpite < numero_aleatorio:
+        print("Por pouco, você chutou baixo! Tente outro Número")
+
+# Quando o palpite é igual ao número, o loop termina e esta mensagem é exibida
+else:
+    print(f"\nParabéns, você acertou o Número {numero_aleatorio} em {tentativas} tentativas!!!!")
+
+# Linha em branco final para melhor apresentação
+print()
