@@ -1,0 +1,25 @@
+# Desafio: Escolha do Item Aleatório - Dark Souls
+# Nível: Iniciante
+
+# Contexto:
+# Em Dark Souls, encontrar itens raros e equipamentos é essencial para sobreviver às batalhas.
+# Neste desafio, você vai criar um programa que sorteia aleatoriamente um item que o jogador encontrou em uma masmorra.
+
+# Objetivo:
+# Crie um programa em Python que:
+# 1. Tenha uma lista com pelo menos 5 itens diferentes (ex: Espada, Escudo, Poção, Anel, Armadura).
+# 2. Use a função random.choice() para escolher um item aleatório dessa lista.
+# 3. Exiba uma mensagem dizendo qual item o jogador encontrou.
+
+# Exemplo de saída:
+# Você encontrou um Escudo!
+
+# (Agora é com você! Escreva seu código abaixo:)
+
+import random
+
+print("\n===Escolha do Item Aleatório - Dark Souls===\n")
+
+itens = ["Espada", "Escudo", "Poção", "Anel", "Armadura"]
+escolhido = random.choice(itens)
+print(f"Item: {escolhido}\n")
