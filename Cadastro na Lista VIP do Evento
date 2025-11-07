@@ -1,0 +1,33 @@
+# Desafio: Cadastro na Lista VIP do Evento
+# Nível: Iniciante
+
+# Contexto:
+# Você está ajudando na organização de um evento exclusivo. Os convidados devem preencher um pequeno cadastro para entrar na lista VIP.
+# Para isso, você precisa criar um programa que solicite algumas informações do usuário.
+
+# Objetivo:
+# Criar um programa em Python que:
+# 1. Peça o nome completo do usuário.
+# 2. Peça a idade.
+# 3. Peça o e-mail.
+# 4. Mostre uma mensagem final confirmando a inscrição na lista VIP com os dados fornecidos.
+
+# Observação:
+# Use a função input() para capturar os dados.
+# Use print() para exibir a mensagem final.
+
+# Exemplo esperado:
+# Nome completo: Maria Oliveira
+# Idade: 27
+# E-mail: maria.oliveira@email.com
+# Saída: Obrigado, Maria Oliveira! Sua inscrição foi registrada com sucesso. Enviaremos detalhes do evento para maria.oliveira@email.com.
+
+print("\n=== Cadastro Lista VIP ===")
+print()
+nome = input("Informe o seu Nome Completo: ")
+idade = int(input("Informe a sua Idade: "))
+email = input("Informe o seu Email: ")
+
+print()
+print(f"Seja bem-vindo(a), {nome}! Sua inscrição foi registrada com sucesso.")
+print(f"Enviaremos detalhes do evento para o e-mail: {email}")
