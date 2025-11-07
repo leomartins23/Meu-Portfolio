@@ -1,0 +1,30 @@
+# Desafio: Contagem de Passos
+# Nível: Iniciante
+
+# Contexto:
+# Imagine que você é um treinador de corrida ajudando um grupo de alunos iniciantes.
+# Para motivar a turma, você quer mostrar a contagem de passos de 1 até um número escolhido.
+
+# Objetivo:
+# Crie um programa em Python que:
+# 1. Peça ao usuário um número inteiro positivo.
+# 2. Use a estrutura "for" para exibir todos os números de 1 até o valor informado.
+# 3. Mostre a contagem em uma linha para cada passo, no seguinte formato:
+#    "Passo X"
+
+# Exemplo de Saída:
+# Digite o número de passos: 5
+# Passo 1
+# Passo 2
+# Passo 3
+# Passo 4
+# Passo 5
+
+# (Agora é com você! Escreva seu código abaixo:)
+
+print()  # Imprime uma linha em branco para deixar o visual mais organizado
+numero = int(input("Digite um número de passos: "))  # Solicita ao usuário um número inteiro e converte a entrada para int
+print()  # Imprime outra linha em branco para separar visualmente a entrada da saída
+
+for passos in range(1, numero+1):  # Loop que vai de 1 até o número informado (inclusive)
+    print(f"Passo {passos}")  # Exibe a frase "Passo X", onde X é o número atual do loop
